@@ -1,8 +1,16 @@
 ---
 title: "Some cool animal facts"
-author: "Philip Leftwich"
+author: "Luke Salvidge"
 output: html_document
 ---
+```{r, include=FALSE}
+usethis::use_git_config(user.name = "qgg21ypuLukeS", user.email = "qgg21ypu@uea.ac.uk")
+
+library(knitr)
+library(tidyverse)  
+library(kableExtra)
+library(here)
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -14,6 +22,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+```{r, echo=FALSE}  
+
+knitr::include_graphics(here("some cool animals", "Grogu.jpg"))
+
+```
 
 ### Cool animal fun facts {.tabset .tabset-fade}
 
